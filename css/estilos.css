@@ -1,19 +1,161 @@
 /* esto es un comentario en css */
 
-    header {
-        background-color: blue; text-align: center; color: rgb(248, 245, 240); font-style: oblique;
-    }
-    button{
-        background-color: black; text-align: center;
-     }
-    main {
-        background-color: rgb(0, 255, 4);
-    }
-    button{
-        background-color: black; color: aliceblue;
-     }
-    footer {
-        background-color: blue; text-align: center ; color: blanchedalmond; font-style: oblique;
-    }
-    a{ text-align: center; color: rgb(248, 245, 240);
-     }
+/* Selector Universal (*) va a seleccionar todos los elementos del html */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Para que el ancho y el alto de los 
+    elementos html se ajuste a lo declarado */
+    
+}
+
+a {
+    color: inherit;
+    text-align: center;
+    color: rgb(248, 245, 240);
+}
+body {
+    text-align: center;
+    color: rgb(249, 249, 249);
+    width: 100%;
+}
+
+.imagen-fondo {
+    /*ver como cambiar la imagen por un bucle de video*/
+    background-image: url(../imagen/micro.jpg);
+    background-size: cover;
+    background-position: center;
+    list-style-position: inside;
+    display: block;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.nombre {
+    color: aliceblue; /*color de fuente*/
+    text-align: center; /* Alinear el texto */
+    font-size: 7vmax; /* Tamaño de la fuente */
+    padding-top: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    color: rgb(28, 15, 161);
+}
+
+h2, h3 {
+    text-align: center;
+    font-size: x-large;
+    font-style: oblique;
+    color: blue;
+    
+}
+
+.button {
+    background-color: rgb(4, 4, 4);
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none; /*sin subrallado*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px; 
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 2px; /*separa las letras una con otra*/
+}
+
+.parrafodestacado {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.sector_inicio_1 {
+    background-color: rgb(0, 255, 4);
+    width: 100%;
+    display: flex;    
+    padding-left: 2rem;
+}
+.INICIO-1 {
+    color: black;
+    text-align: justify;
+    border: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    width: 60%;
+    text-align: left;
+}
+.inicio_2{
+    border: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    width: 40%;
+    text-align: right;
+}
+.parrafossector1 {
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.item{
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-style: oblique;
+    letter-spacing: 2px;
+    border-bottom: 2rem;
+}
+
+.SECTOR_INICIO-2 {
+    display: block;
+    background-color: rgb(0, 255, 4);
+    border: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    text-align: center;
+    color: blue;
+    letter-spacing: 2px;
+    font-style: oblique;
+    font-size: 1.5rem;
+}
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.enviar{
+    background-color: blue;
+    color: aliceblue;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none; /*sin subrallado*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px; 
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    margin-top: ;
+    text-align: center;
+    letter-spacing: 2px;
+}
+footer {
+    background-color: blue;
+    text-align: center;
+    color: blanchedalmond;
+    font-style: oblique;
+}
+.redsocial{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    padding-bottom: 1rem;
+}
