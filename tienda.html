@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tienda</title>
+
+  <!-- vinculacin de hojas de estilos css -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!--va la cabecera de la pag. (se repite en todas las pag) -->
+  <header>
+    <!--muted:quita el audio
+      autoplay:Para que el vídeo empiece sin necesidad de darle al play
+      loop:Para que se vuelva a reproducir cuando se acabe el vídeo-->
+    <section class="header">
+      <video class="video_fondo" autoplay muted loop>
+        <Source src="videos/microvideo.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section>
+      <H1 class="nombre">PC-JIM</H1>
+      <!-- nav solo para navegar dentro de mi saditio -->
+      <nav>
+        <ul>
+          <li class="botton">
+            <a href="index.html">INICIO</a>
+          </li>
+          <li class="botton">
+            <a href="trabajos.html">TRABAJOS</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="parrafodestacado">Tecnico en Software y Hatware en Computacion y Celulares</p>
+    </section>
+  </header>
+
+  <!--va el desarrollo/conenido de la pag.-->
+  <main>
+    <section class="sector_inicio_1">
+      <h1 class="h-central">"De TuTi"...Tienda OneLine...</h1>
+    </section>
+
+    <!-- Tabla para comprar los productos -->
+    <section class="sector_inicio_1">
+      <table class="tabla">
+        <!-- th columnas prinsipales con negrita -->
+        <tr class="letras">
+          <th> IMAGEN </th>
+          <th> NOMBRE </th>
+          <th> DESCRIPCIÓN </th>
+          <th> PRECIO </th>
+          <th> LINK DE PAGO </th>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/Joysticks.jpg" targer="_blank" alt="imagen" width="200"
+              height="200"></td>
+          <td>Joystick</td>
+          <td>Con bateria de 5000mha y dos cooler</td>
+          <td>$3000</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/cable paralelo.jpg" targer="_blank" alt="imagen" width="200"
+              height="200">
+          </td>
+          <td>cable Paralelo</td>
+          <td>nuevo de fabrica (bolsa cerrad)</td>
+          <td>$1000</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/lectograbadora de dvd.jpg" targer="_blank" alt="imagen"
+              width="200" height="200"></td>
+          <td>Lectograbadora de DVD</td>
+          <td>LG 20x black SATA</td>
+          <td>$4000</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/proteccion volt para net-notbook.jpg" targer="_blank"
+              alt="imagen" width="200" height="200"></td>
+          <td>Protector de tensión Lyonn para Laptops</td>
+          <td>Potencia pico 1200Va y un nivel máx. de ruido 40db</td>
+          <td>$2000</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/proteccion de voltaje 220.jpg" targer="_blank" alt="imagen"
+              width="200" height="200"></td>
+          <td>Proteccion de tensión Microcontrolado</td>
+          <td>Potencia pico: 240Va, Vot. Entrada 180v y salida 220v con un rango de entrada 180/240v</td>
+          <td>$1600</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+        <tr>
+          <td><img class="zoom" src="imagen/TecnoArreglos/butaca bebe.jpg" targer="_blank" alt="imagen" width="200"
+              height="200">
+          </td>
+          <td>Butaca/Huevito para GRACO + base</td>
+          <td>Exelente estado, soporta a tu bebe h/13.6Kg y con un sistema de arnés de 5 puntos. Que logra una comodidad
+            y tranquilidad a la hora de trasportarlo. Ademas se puede sacar la parte superior para utilizarlo como
+            huevito cuando uno camina</td>
+          <td>$9000</td>
+          <td><A class="pagar" href="https://www.mercadopago.com.ar/" target="_blank">Mercado Pago</A></td>
+        </tr>
+      </table>
+    </section>
+    <section class="SECTOR_INICIO-2">
+      <p class="atencion">ATENCIÓN: Todos los producto aunque algunos sean nuevos no tienen garantia, se les entrega
+        funcionando en
+        perfecto estado.</p>
+    </section>
+  </main>
+
+  <!--va el pie de pag. (se repite en todas las pag)-->
+  <footer class="todo_el_pie">
+    <a class="redsocial"
+      href="https://web.facebook.com/maximiliano.gomez.161/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_follower_visibility_disclosure=0"
+      target="_blank">Facebook</a>
+    <a class="redsocial" href="https://www.instagram.com/maxtcnologia/" target="_blank">Instagram </a>
+    <p class="pie_de_pagina">Desarrollado y Diseño por Gómez Maximiliano Jesus</p>
+  </footer>
+
+</html>

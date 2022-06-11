@@ -14,24 +14,33 @@
 <body>
   <!--va la cabecera de la pag. (se repite en todas las pag) -->
   <header>
-    <section class="imagen-fondo">
+    <!--muted:quita el audio
+      autoplay:Para que el vídeo empiece sin necesidad de darle al play
+      loop:Para que se vuelva a reproducir cuando se acabe el vídeo-->
+    <section class="header">
+      <video class="video_fondo" autoplay muted loop>
+        <Source src="videos/microvideo.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section>
       <H1 class="nombre">PC-JIM</H1>
-      <!-- nav solo para navegar dentro de mi sitio -->
+      <!-- nav solo para navegar dentro de mi saditio -->
       <nav>
         <ul>
-          <button class="button">
-            <a href="paguina2.html">TRABAJOS</a>
-          </button>
-          <button class="button">
-            <a href="paguina3.html">TIENDA</a>
-          </button>
+          <li class="botton">
+            <a href="trabajos.html">tranajo</a>
+          </li>
+          <li class="botton">
+            <a href="tienda.html">TIENDA</a>
+          </li>
         </ul>
       </nav>
       <p class="parrafodestacado">Tecnico en Software y Hatware en Computacion y Celulares</p>
     </section>
   </header>
   <!--va el desarrollo/conenido de la pag. (unico por cada pag)-->
-  <main>
+  <main class="main">
     <section class="sector_inicio_1">
       <div class="INICIO-1">
         <H2>NUESTRO SITIO</H2>
@@ -57,7 +66,7 @@
     <section class="SECTOR_INICIO-2">
       <!-- creo un formulario -->
       <form action="" method="" enctype="">
-        <h2>Formulario de Inscripción</h2>
+        <h2 class="formulario">Formulario de Inscripción</h2>
         <div>
           <label for="Apellido">Apellido:</label>
           <input type="text" id="Apellido" placeholder="...su Apellido..." name="Apellido">
@@ -71,17 +80,19 @@
           <input type="email" id="email" placeholder="...su email.." name="email">
         </div>
         <div class="enviar">
-          <imput type="submit" value="enviar">Enviar</imput>
+          <!--hace que sea una imagen el enlase de enviar formulario-->
+          <input type="image" src="imagen/Paomedia-Small-N-Flat-Box-in.ico" height="50" width="50" />
         </div>
+      </form>
     </section>
   </main>
   <!--va el pie de pag. (se repite en todas las pag)-->
-  <footer>
+  <footer class="todo_el_pie">
     <a class="redsocial"
       href="https://web.facebook.com/maximiliano.gomez.161/?viewas=100000686899395&show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_follower_visibility_disclosure=0"
       target="_blank">Facebook</a>
     <a class="redsocial" href="https://www.instagram.com/maxtcnologia/" target="_blank">Instagram </a>
-    <p>Desarrollado y Diseño por Gómez Maximiliano Jesus</p>
+    <p class="pie_de_pagina">Desarrollado y Diseño por Gómez Maximiliano Jesus</p>
   </footer>
 </body>
 
