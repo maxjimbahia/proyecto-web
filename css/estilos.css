@@ -7,8 +7,6 @@
     box-sizing: border-box;
     /* Para que el ancho y el alto de los 
     elementos html se ajuste a lo declarado */
-    width: cover;
-    height: cover;
 }
 
 a {
@@ -20,7 +18,8 @@ a {
 body {
     text-align: center;
     color: rgb(249, 249, 249);
-    background-color: rgb(0, 255, 4);
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+
 }
 
 .video_fondo {
@@ -32,20 +31,16 @@ body {
     bottom: 0;
     /*z-index: al seleccionarle en menos, la imagen lo posiciona atras*/
     z-index: -1;
-    width: 100vw;
+    /*ancho el 100 del dispositivo*/
+    width: 100%;
+    /*altura adaptable del 100 del dispositivo*/
     height: 100%;
     object-fit: cover;
-
 }
 
 header {
     display: block;
     position: sticky;
-    /*altura el 100 del dispositivo*/
-    height: cover;
-    /*ancho*/
-    width: cover;
-
 }
 
 .nombre {
@@ -54,7 +49,7 @@ header {
     /* Alinear el texto */
     text-align: center;
     /* Tamaño de la fuente */
-    font-size: 7vmax;
+    font-size: 7rem;
     padding-top: 0rem;
     margin-top: 0rem;
     margin-bottom: 2rem;
@@ -82,7 +77,6 @@ h1 h2 h3 h4 {
     text-align: center;
     /*separa las letras una con otra*/
     letter-spacing: 2px;
-
 }
 
 
@@ -93,20 +87,17 @@ h1 h2 h3 h4 {
     margin-bottom: 0;
     text-transform: capitalize;
     color: aliceblue;
-
 }
 
 /*inicicio del main*/
 .main {
     margin: 0;
+    min-height: 100vh;
     width: cover;
-    height: cover;
-    position: sticky;
-
+    position: relative;
 }
 
 .sector_inicio_1 {
-    background-color: rgb(0, 255, 4);
     width: 100%;
     display: flex;
     padding-left: 2rem;
@@ -117,17 +108,23 @@ h1 h2 h3 h4 {
     text-align: justify;
     border: 0rem;
     padding: 0rem;
-    border: 0rem;
+    margin-top: 1.5rem;
+
+    align-items: center;
     width: 60%;
     text-align: left;
 }
 
 .inicio_2 {
-    border: 0rem;
-    padding: 0rem;
-    border: 0rem;
-    width: 40%;
+    position: relative;
+    height: 300px;
+    width: 50%;
+    margin: 1.5rem;
     text-align: right;
+}
+
+.lista{
+    margin-top: 10px;
 }
 
 .parrafossector1 {
@@ -150,17 +147,11 @@ h1 h2 h3 h4 {
 
 .SECTOR_INICIO-2 {
     display: block;
-    background-color: rgb(0, 255, 4);
-    text-align: cen ter;
+    text-align: center;
     color: blue;
     letter-spacing: 2px;
     font-style: oblique;
     font-size: 1.5rem;
-}
-
-div {
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .formulario {
@@ -192,7 +183,6 @@ div {
     background-color: blue;
     color: blanchedalmond;
     font-style: oblique;
-
 }
 
 .redsocial {
@@ -215,15 +205,10 @@ p {
 /*Iniciondo pagina 2 TRABAJOS*/
 
 .h-central {
-    position: relative;
-    flex-shrink: 0;
-    display: block;
-    color: blue;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
-    padding-left: 20%;
+    padding: 0;
+    color: blanchedalmond;
     font-size: 3rem;
+    margin-bottom: 3rem;
 }
 
 .tabla {
@@ -234,10 +219,9 @@ p {
 }
 
 .sutite {
-    background-color: rgb(0, 255, 4);
     position: relative;
     display: block;
-    color: blue;
+    color: blanchedalmond;
     text-align: left;
     padding-bottom: 1.3REM;
 }
@@ -245,7 +229,6 @@ p {
 .sector_trabajo-imagenes {
     display: block;
     position: relative;
-    background-color: rgb(0, 255, 4);
     justify-content: space-between;
     text-align: center;
     color: blue;
@@ -255,30 +238,41 @@ p {
 }
 
 /*inicio de imagen con flex*/
-
-.box{
-    justify-content: flex-start;
-
+.box {
+    /*Los elementos aparecen distribuidos uniformemente y con un espacio igual(der. e izq.)*/
+    justify-content: space-around;
+    /*Para facilitar el maquetado de la pág*/
     display: flex;
+    /*Crea en filas de izquierda a derecha*/
     flex-direction: row;
-    justify-content: space-between;
+    /*todos los elementos están alineados con el inicio del eje transversal*/
     align-items: flex-start;
     gap: 3rem;
     position: relative;
     overflow: hidden;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+
 }
 
-.subbox_doble{
+.subbox {
     display: inline-block;
+    /*No pierde su espacio en el flujo, el punto de referencia son
+    los costados.*/
     position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
-    
+    width: 400px;
+    height: 400px;
+    border: solid black;
+    border-radius: 1rem;
+    border-style: groove;
+    /*genera sombras al contenedor (div)*/
+    box-shadow: darkolivegreen 4px 4px;
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    /*permite que el contenido no se desborde en su div*/
+    overflow: hidden;
 }
 
-.texto-encima{
+.texto-encima {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -287,35 +281,24 @@ p {
     color: rgb(4, 42, 255);
     font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    -webkit-text-stroke: 2px rgb(25, 9, 95);
+    -webkit-text-stroke: 2px rgb(12, 21, 102);
 }
 
-.texto-encima2{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    color: rgb(4, 42, 255);
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    -webkit-text-stroke: 2px rgb(25, 9, 95);
-}
-
-.imagen_trabajo{
+.imagen_trabajo {
     /*redondea los bordes para que quede mas estetico*/
     border-radius: 2rem;
 }
 
-.box_central{
+.box_central {
     align-content: center;
 }
+
 /*final de imagen con flex*/
 
 .sector_ayuda {
     display: block;
     text-align: left;
-    color: blue;
+    color: red;
     letter-spacing: 2px;
     font-style: oblique;
     font-size: 1.5rem;
@@ -325,7 +308,7 @@ p {
 .ayudalink {
     margin-top: 1rem;
     margin-left: 10rem;
-    color: darkmagenta;
+    color: yellow;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     /*saca el puntito de la viñeta*/
     list-style-type: none;
@@ -335,36 +318,33 @@ p {
 
 /*iniciando pagina 3 TIENDA*/
 
-th {
-    color: blue;
-    border: 1rem;
-    border: 2.5px solid blue;
-    font-size: 25PX;
-}
-
-td {
-    color: black;
-    text-align: center;
-    font-size: 18px;
-    border: 2px solid rgb(4, 4, 4);
-}
-
 /*Transición de uno estado al otro (del zoom)  forma gradual*/
 .zoom {
     transition: transform .2s;
+
 }
 
 /*Hacer zoom a la imagen*/
 .zoom:hover {
-    transform: scale(2);
-    width: 200px;
-    height: 200px;
-    margin-left: 5rem;
+    transform: scale(1);
+    top: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+
+}
+
+.vendo_titulo {
+    margin-bottom: 5px;
+    margin-top: 5px;
+
 }
 
 .pagar {
-    color: rgb(201, 45, 45);
+    display: inline-block;
+    color: yellow;
     font-size: large;
+    margin-top: 10px;
 }
 
 .atencion {
