@@ -6,12 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabajos</title>
+<!-- Vinculacion de la hoja de estilos de Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  <!-- vinculacin de hojas de estilos css -->
-  <link rel="stylesheet" href="css/estilos.css">
+<!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
+<link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
-  <!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
-  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+<!-- Vinculacion de mi hoja de estilos propia CSS -->
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
@@ -42,7 +44,7 @@
           </li>
         </ul>
       </nav>
-      <p class="parrafodestacado">Tecnico en Software y Hatware en Computacion y Celulares</p>
+      <p class="parrafodestacado">Técnico en Software y Hatware en Computacion y Celulares</p>
     </section>
   </header>
 
@@ -50,48 +52,68 @@
   <main class="main">
     <h1 class="h-central">Hola a todo el mundo</h1>
     <h2 class="sutite">Les dejo un poco de mis trabajos:</h2>
-
-    <!--imagen con flex-->
-    <section class="box">
-      <div class="box">
-        <div class="subbox">
-          <h2 class="texto-encima">Antes</h2>
-          <img class="imagen_trabajo" src="imagen/TecnoArreglos/antes1.jpg" width="400" height="400"
-            alt="Placa de una fuente de alimentación">
+    <!--imagen con bootstrap-->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <!-- Aca esta el carousel -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imagen/TecnoArreglos/antes1.jpg" alt="No se puedo mostrar esta imagen">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Antes</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/TecnoArreglos/despues1.jpg" alt="No se puedo mostrar esta imagen">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Después</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/TecnoArreglos/antes2.jpg" alt="No se puedo mostrar esta imagen">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Antes</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/TecnoArreglos/despues2.jpeg" alt="No se puedo mostrar esta imagen">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Después</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagen/TecnoArreglos/aaaa pin de carga para noteboock.jpg" alt="No se puedo mostrar esta imagen">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Pin de carga de noteboock</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="subbox">
-          <h2 class="texto-encima">Después</h2>
-          <img class="imagen_trabajo" src="imagen/TecnoArreglos/despues1.jpg" width="400" height="400"
-            alt="Luego de su limpieza">
-        </div>
-      </div>
-      <div class="box">
-        <div class="subbox">
-          <h2 class="texto-encima">Antes</h2>
-          <img class="imagen_trabajo" src="imagen/TecnoArreglos/antes2.jpg" width="400" height="400"
-            alt="Gabinete todo sucio antes del servicio de mantenimiento">
-        </div>
-        <div class="subbox">
-          <h2 class="texto-encima">Después</h2>
-          <img class="imagen_trabajo" src="imagen/TecnoArreglos/despues2.jpeg" width="400" height="400"
-            alt="Gabinete luego del servicio de mantenimiento">
-        </div>
-      </div>
-      <div class="subbox">
-        <h2 class="texto-encima texto-encima_pin">Pin de carga de una Notebook</h2>
-        <img class="imagen_trabajo" src="imagen/TecnoArreglos/aaaa pin de carga para noteboock.jpg" width="600"
-          height="500" alt="Pin de carga de un anotebook reparado">
       </div>
     </section>
-    <!--final de imagen con flex-->
+    <!--final de imagen con bootstrap-->
 
     <section class="sector_ayuda">
       <h3>Para alguna ayudita, les dejamos los siguientes videos y link:</h3>
       <ul class="ayudalink">
         <li>
           <img src="imagen/11927-backhand-index-pointing-right-icon.png" alt="image" width="50" height="50">
-          <a href="https://youtu.be/0dV5OxN0T3U" target="_blank">Conexión de ventilador con la llave e implementando un
-            cambio de giro.</a>
+          <a href="https://youtu.be/0dV5OxN0T3U" target="_blank">Conexión de ventilador con cambio de giro...</a>
         </li>
         <li>
           <img src="imagen/11927-backhand-index-pointing-right-icon.png" alt="image" width="50" height="50">
@@ -109,6 +131,10 @@
     <a class="redsocial" href="https://www.instagram.com/maxtcnologia/" target="_blank">Instagram </a>
     <p class="pie_de_pagina">Desarrollado y Diseño por Gómez Maximiliano Jesus</p>
   </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
