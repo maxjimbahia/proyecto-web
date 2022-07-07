@@ -183,7 +183,7 @@ h1 h2 h3 h4 {
 }
 
 .todo_el_pie {
-    display: block;
+    display: inline-block;
     position: initial;
     background-color: blue;
     color: blanchedalmond;
@@ -217,6 +217,16 @@ p {
     margin-bottom: 3rem;
 }
 
+.sutite {
+    position: relative;
+    display: block;
+    color: blanchedalmond;
+    text-align: left;
+    font-size: xx-large;
+    margin-left: 2rem;
+    padding-bottom: 1.3REM;
+}
+
 /* Carousel de bootstrap */
 .carousel-item img {
     /* Altura de la imagenes */
@@ -234,50 +244,6 @@ h5 {
     -shadow: darkolivegreen 4px 4px;
 }
 
-.sutite {
-    position: relative;
-    display: block;
-    color: blanchedalmond;
-    text-align: left;
-    font-size: xx-large;
-    margin-left: 2rem;
-    padding-bottom: 1.3REM;
-}
-
-.sector_trabajo-imagenes {
-    display: block;
-    position: relative;
-    justify-content: space-between;
-    text-align: center;
-    color: blue;
-    letter-spacing: 2px;
-    font-style: oblique;
-    font-size: 1.5rem;
-}
-
-.texto-encima {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    color: rgb(4, 42, 255);
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    /*color y borde de las letras*/
-    -webkit-text-stroke: 2px rgb(12, 21, 102);
-}
-
-.texto-encima_pin {
-    left: 0;
-    top: 0;
-}
-
-.imagen_trabajo {
-    /*redondea los bordes para que quede mas estetico*/
-    border-radius: 1.5rem;
-}
-
 .sector_ayuda {
     display: block;
     text-align: left;
@@ -289,6 +255,7 @@ h5 {
 }
 
 .ayudalink {
+    padding: 0;
     margin-top: 1rem;
     margin-left: 10rem;
     color: yellow;
@@ -300,7 +267,6 @@ h5 {
 
 
 /*iniciando pagina 3 TIENDA*/
-
 
 /*inicio de imagen con flex*/
 .box {
@@ -327,6 +293,7 @@ h5 {
     width: 400px;
     height: 500px;
     border: solid black;
+    /*redondea los bordes para que quede mas estetico*/
     border-radius: 1.5rem;
     border-style: groove;
     /*genera sombras al contenedor (div)*/
@@ -378,6 +345,7 @@ h5 {
 
 /*adaptacion para tablet*/
 @media (max-width: 1023px) {
+
     /*pag. 1 inicio*/
     h2 h3 {
         text-align: center;
@@ -459,11 +427,37 @@ h5 {
 
     /*pag. 2 trabajo*/
 
-    .
+    .h-central {
+        font-size: 2.5rem;
+    }
+
+    .sutite {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        margin-right: 1rem;
+    }
+
+    .ayudalink {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+        font-size: 26px;
+    }
 }
 
 /*adaptacion para movil*/
 @media (max-width: 600px) {
+
     /*pag. 1 inicio*/
     .inicio_2_imagen {
         margin-left: 10%;
@@ -476,8 +470,8 @@ h5 {
     .tipear {
         font-size: 1rem;
     }
-    
-    .formulario{
+
+    .formulario {
         font-size: 22px;
     }
 
@@ -502,5 +496,30 @@ h5 {
 
     /*pag. 2 trabajo*/
 
-    .
+    .h-central {
+        font-size: 2.2rem;
+    }
+
+    .sutite {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        margin-right: 1rem;
+    }
+
+    .ayudalink {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0;
+        font-size: 20px;
+    }
 }
