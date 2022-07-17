@@ -18,7 +18,7 @@ a {
 body {
     text-align: center;
     color: rgb(249, 249, 249);
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-color: rgb(134, 152, 255);
     width: 100vw;
 }
 
@@ -561,6 +561,12 @@ h5 {
     }
 
     /*pag. 3 tienda*/
+
+    .h-central {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        font-size: 1.8rem;
+    }
 
     .box {
         justify-content: space-around;
